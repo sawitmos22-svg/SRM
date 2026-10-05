@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link rel="icon" href="images/SRM1.jpg" type="image/x-icon">
+    <title>SRM Key Solutions, LLC</title>
+    
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5"
+        rel="stylesheet"
+        type="text/css" />
+
+    <style>
+        /* =================================
+           SRM ORIGINAL THEME
+        ================================= */
+
+        :root {
+            --bg: #fff;
+            --fg: #141414;
+            --muted: #5a5f68;
+            --card: #f4f5f7;
+            --line: #dfe2e7;
+            --red: #c0000f;
+            --red-fg: #fff;
+        }
+
+        /* Original Dark Theme */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111214;
+                --fg: #f0f1f3;
+                --muted: #a3a8b2;
+                --card: #1b1d21;
+                --line: #2d3036;
+                --red: #e5313f;
+                --red-fg: #fff;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body class="bg-base-100 text-base-content ">
+
+    <!-- =========================
+         Header
+    ========================== -->
+    <header class="sticky top-0 z-50 r bg-neutral shadow-md">
+        <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-5">
+
+            <!-- Logo -->
+            <a href="#home"
+                class="shrink-0 transition-transform duration-200 hover:scale-105 w-32 h-25 flex"
+                aria-label="SRM Key Solutions Home">
+
+                <img
+                    src="images/SRM1-Photoroom.png"
+                    alt="SRM Key Solutions, LLC"
+                    class="h-30 w-auto object-contain"
+                >
+            </a>
+
+            <!-- Navigation -->
+            <nav class="hidden items-center gap-7 md:flex">
+                <a href="#home"
+                    class="font-semibold text-white transition-colors hover:text-error hover:scale-105 hover:text-red-400">
+                    Home
+                </a>
+
+                <a href="#about"
+                    class="font-semibold text-white transition-colors hover:text-error hover:scale-105 hover:text-red-400">
+                    About
+                </a>
+
+                <a href="#services"
+                    class="font-semibold text-white transition-colors hover:text-error hover:scale-105 hover:text-red-400">
+                    Services
+                </a>
+
+                <a href="#contact"
+                    class="font-semibold text-white transition-colors hover:text-error hover:scale-105 hover:text-red-400">
+                    Contact
+                </a>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="dropdown dropdown-end md:hidden">
+                <button
+                    tabindex="0"
+                    class="btn btn-square btn-ghost text-white"
+                    aria-label="Open navigation menu">
+                    ☰
+                </button>
+
+                <ul
+                    tabindex="0"
+                    class="menu dropdown-content z-[60] mt-3 w-48 rounded-box bg-base-100 p-2 shadow-lg">
+
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         Hero
+    ========================== --><section
+    id="home"
+    class="bg-[var(--card)] py-16 lg:py-20">
+
+    <div class="mx-auto grid max-w-6xl items-center gap-10 px-5 lg:grid-cols-2">
+
+        <div>
+            <p class="mb-2 text-sm font-bold uppercase tracking-widest text-[var(--red)]">
+                SRM Key Solutions, LLC
+            </p>
+
+            <h1 class="text-4xl font-bold leading-tight md:text-5xl">
+                Your Key
+                <span class="text-[var(--red)]">S</span>olutions to
+                <span class="text-[var(--red)]">R</span>eliable
+                <span class="text-[var(--red)]">M</span>aintenance
+            </h1>
+
+            <p class="mt-5 max-w-xl text-[var(--muted)]">
+                Dependable sourcing and support to keep your operations running.
+                Tell us what you need and we will find the right solution.
+            </p>
+
+            <a
+                href="#contact"
+                class="btn mt-7 border-0 bg-[var(--red)] px-7 text-white hover:bg-[var(--red)]">
+                Contact Us
+            </a>
+        </div>
+
+        <img
+            src="images/hero.jpg"
+            alt="Industrial plant"
+            class="h-[300px] w-full rounded-xl object-cover"
+        >
+
+    </div>
+</section>>
+
+
+    <!-- =========================
+         About
+    ========================== -->
+    <section id="about" class="py-16 lg:py-20">
+
+        <div class="mx-auto max-w-6xl px-5">
+
+            <div class="mb-10 text-center">
+
+                <h2 class="text-3xl font-bold">
+                    About Us
+                </h2>
+
+                <div class="mx-auto mt-3 h-1 w-14 bg-error"></div>
+
+            </div>
+
+
+            <div class="grid items-center gap-10 md:grid-cols-2">
+
+                <img
+                    src="images/global-sourcing.jpg"
+                    alt="Engineer in hard hat"
+                    class="h-60 w-full rounded-xl object-cover object-top shadow-md"
+                >
+
+                <div class="text-base-content/80">
+
+                    <p class="leading-7 text-white">
+                        Since its founding in 2013, Siam Flex Technology has become
+                        the leading supplier of spare parts supplying to contractors
+                        mainly from heavy industries such as steel mills, refineries,
+                        food processing, mining and minerals, and many others.
+                    </p>
+
+                    <p class="mt-4 leading-7 text-white">
+                        Furthermore, we also excellence in seeking spare parts
+                        worldwide to serve our customers promptly with precise
+                        specifications of the requested items.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Services / Products
+    ========================== -->
+    <section id="services" class="bg-[var(--card)] py-16 lg:py-20">
+
+        <div class="mx-auto max-w-6xl px-5">
+
+            <div class="mb-10 text-center">
+
+                <h2 class="text-3xl font-bold">
+                    Products
+                </h2>
+
+                <div class="mx-auto mt-3 h-1 w-14 bg-error"></div>
+
+            </div>
+
+
+            <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Card 1 -->
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <figure class="px-3 pt-3">
+
+                        <img
+                            src="images/spare-parts.jpg"
+                            alt="Spare Parts Supply"
+                            class="h-36 w-full rounded-lg object-cover"
+                        >
+
+                    </figure>
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-lg font-bold">
+                            Spare Parts Supply
+                        </h3>
+
+                        <p class="text-sm text-base-content/70 text-white">
+                            Reliable supply of spare parts for contractors
+                            in heavy industries.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <figure class="px-3 pt-3">
+
+                        <img
+                            src="images/global-sourcing.jpg"
+                            alt="Worldwide Sourcing"
+                            class="h-36 w-full rounded-lg object-cover"
+                        >
+
+                    </figure>
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-lg font-bold">
+                            Worldwide Sourcing
+                        </h3>
+
+                        <p class="text-sm text-base-content/70 text-white">
+                            We search for parts worldwide and match
+                            the exact specifications you request.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <figure class="px-3 pt-3">
+
+                        <img
+                            src="images/industries.jpg"
+                            alt="Industries We Serve"
+                            class="h-36 w-full rounded-lg object-cover"
+                        >
+
+                    </figure>
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-lg font-bold">
+                            Industries We Serve
+                        </h3>
+
+                        <p class="text-sm text-base-content/70 text-white">
+                            Steel mills, refineries, food processing,
+                            mining and minerals, and more.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <figure class="px-3 pt-3">
+
+                        <img
+                            src="images/industries.jpg"
+                            alt="Industrial Solutions"
+                            class="h-36 w-full rounded-lg object-cover"
+                        >
+
+                    </figure>
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-lg font-bold">
+                            Industrial Solutions
+                        </h3>
+
+                        <p class="text-sm text-base-content/70 text-white">
+                            Solutions designed to support reliable
+                            industrial operations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <figure class="px-3 pt-3">
+
+                        <img
+                            src="images/industries.jpg"
+                            alt="Maintenance Support"
+                            class="h-36 w-full rounded-lg object-cover"
+                        >
+
+                    </figure>
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-lg font-bold">
+                            Maintenance Support
+                        </h3>
+
+                        <p class="text-sm text-base-content/70 text-white">
+                            Dependable sourcing support to keep your
+                            maintenance operations moving.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 6 -->
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                    <figure class="px-3 pt-3">
+
+                        <img
+                            src="images/industries.jpg"
+                            alt="Custom Sourcing"
+                            class="h-36 w-full rounded-lg object-cover"
+                        >
+
+                    </figure>
+
+                    <div class="card-body">
+
+                        <h3 class="card-title text-lg font-bold">
+                            Custom Sourcing
+                        </h3>
+
+                        <p class="text-sm text-base-content/70 text-white">
+                            We help identify and source parts based
+                            on your specific requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Contact
+    ========================== -->
+    <section id="contact" class="py-16 lg:py-20">
+
+        <div class="mx-auto max-w-6xl px-5">
+
+            <div class="mb-12 text-center">
+
+                <h2 class="text-3xl font-bold">
+                    Contact Us
+                </h2>
+
+                <div class="mx-auto mt-3 h-1 w-14 bg-error"></div>
+
+            </div>
+
+
+            <div class="grid items-stretch gap-12 md:grid-cols-[0.85fr_1.15fr]">
+
+
+                <!-- Contact Information -->
+                <div class="flex flex-col justify-center">
+
+                    <h3 class="mb-6 text-2xl font-bold">
+                        SRM Key Solutions, LLC
+                    </h3>
+
+
+                    <div class="space-y-6">
+
+                        <div>
+
+                            <div class="mb-1 font-semibold">
+                                Address
+                            </div>
+
+                            <p class="text-base-content/70 leading-7 text-red-400">
+                                340 W. Butterfield Road, Suite 2D<br>
+                                Elmhurst, IL 60126
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="mb-1 font-semibold">
+                                Phone
+                            </div>
+
+                            <a
+                                href="tel:+19712819776"
+                                class="text-error text-red-400 hover:underline hover:text-red-600">
+                                (+1) 971.281.9776
+                            </a>
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="mb-1 font-semibold">
+                                Email
+                            </div>
+
+                            <a
+                                href="mailto:solutions@srmkeysolutions.com"
+                                class="break-all text-red-400 hover:underline hover:text-red-600">
+                                solutions@srmkeysolutions.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Map -->
+                <div>
+
+                    <h3 class="mb-5 text-2xl font-bold">
+                        Find Us
+                    </h3>
+
+                    <div class="overflow-hidden rounded-xl border border-base-300 shadow-sm">
+
+                        <iframe
+                            title="SRM Key Solutions location"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=340+W.+Butterfield+Road+Suite+2D+Elmhurst+IL+60126&output=embed"
+                            class="h-[320px] w-full border-0">
+                        </iframe>
+
+                    </div>
+
+
+                    <a
+                        class="btn btn-error mt-5 text-white"
+                        href="https://www.google.com/maps/search/?api=1&query=340+W.+Butterfield+Road+Suite+2D+Elmhurst+IL+60126"
+                        target="_blank"
+                        rel="noopener">
+
+                        Open in Google Maps
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+    <footer class="border-t border-base-300 py-6 text-center text-sm text-base-content/60 text-white text-sm">
+
+        © <span id="current-year">2026</span>
+        SRM Key Solutions, LLC. All rights reserved.
+
+    </footer>
+
+
+</body>
+</html>
