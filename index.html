@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -34,11 +34,11 @@
 
         :root {
             color-scheme: dark;
-            --bg: #fff;
-            --fg: #141414;
-            --muted: #5a5f68;
-            --card: #f4f5f7;
-            --line: #dfe2e7;
+            --bg: #000;
+            --fg: #fff;
+            --muted: #b3b3b3;
+            --card: #000;
+            --line: #333;
             --red: #c0000f;
             --red-fg: #fff;
         }
@@ -55,15 +55,48 @@
             font-family: system-ui, -apple-system, Segoe UI, Arial, sans-serif;
             line-height: 1.6;
         }
+
+        #home {
+            background-color: #121212;
+        }
+
+        #about {
+            background-color: #080808;
+        }
+
+        #industries {
+            background-color: #181818;
+        }
+
+        #services {
+            background-color: #0d0d0d;
+        }
+
+        #services .card {
+            background-color: #1c1c1c;
+            color: var(--fg);
+        }
+
+        #contact {
+            background-color: #141414;
+        }
+
+        header {
+            background-color: #050505;
+        }
+
+        footer {
+            background-color: #000;
+        }
     </style>
 </head>
 
-<body class="bg-base-100 text-base-content ">
+<body>
 
     <!-- =========================
          Header
     ========================== -->
-    <header class="sticky top-0 z-50 r bg-neutral shadow-md">
+    <header class="sticky top-0 z-50 r bg-black shadow-md">
         <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-5">
 
             <!-- Logo -->
@@ -218,15 +251,15 @@
 
                 <div class="text-base-content/80 text-justify">
 
-                    <p class="leading-7 text-white">
+                    <p class="leading-7 text-[var(--fg)]">
                         Since its founding in 2013, <strong>Siam Flex Technology</strong>, the former company of <strong>SRM Key Solutions LLC</strong>, has established itself as a trusted supplier of industrial spare parts and engineering solutions to contractors and customers across a wide range of heavy industries, including <strong>power generation, steel mills, refineries, oil &amp; gas, food processing, mining and minerals, and other industrial sectors.</strong>
                     </p>
 
-                    <p class="mt-4 leading-7 text-white">
+                    <p class="mt-4 leading-7 text-[var(--fg)]">
                         With extensive experience in <strong>global sourcing and worldwide supply</strong>, we have built a strong international network of manufacturers and suppliers, enabling us to source and supply industrial parts and equipment from around the world. Our expertise allows us to respond efficiently to diverse customer requirements while ensuring the <strong>correct specifications, reliable quality, competitive solutions, and timely delivery.</strong>
                     </p>
 
-                    <p class="mt-4 leading-7 text-white">
+                    <p class="mt-4 leading-7 text-[var(--fg)]">
                         Today, <strong>SRM Key Solutions LLC</strong> continues to expand its global capabilities, connecting trusted manufacturers worldwide with customers across international markets. Our commitment is to provide dependable sourcing and supply solutions that help our customers maintain reliable and efficient operations.
 
                     </p>
@@ -401,7 +434,7 @@
             <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
                 <!-- Card 1 -->
-                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                     <figure class="px-3 pt-3">
 
@@ -430,7 +463,7 @@
 
 
                 <!-- Card 2 -->
-                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                     <figure class="px-3 pt-3">
 
@@ -459,7 +492,7 @@
 
 
                 <!-- Card 3 -->
-                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                     <figure class="px-3 pt-3">
 
@@ -488,7 +521,7 @@
 
 
                 <!-- Card 4 -->
-                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                     <figure class="px-3 pt-3">
 
@@ -517,7 +550,7 @@
 
 
                 <!-- Card 5 -->
-                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                     <figure class="px-3 pt-3">
 
@@ -546,7 +579,7 @@
 
 
                 <!-- Card 6 -->
-                <div class="card border border-red-500 border-t-4 border-t-error bg-black-700 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="card border border-red-500 border-t-4 border-t-error bg-black shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                     <figure class="px-3 pt-3">
 
